@@ -12,7 +12,7 @@ function Post({ title, date, author, text, highlights, image }) {
       {highlights.map((highlight) => {
         return <li key={highlights.indexOf(highlight)}>{highlight}</li>;
       })}
-      <img src={image.link} alt={image.alt}></img>
+      <img className = "picture" src={image.link} alt={image.alt}></img>
     </article>
   );
 }
